@@ -1,9 +1,10 @@
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
+// const cancel = document.getElementById("can");
 
 function addTask(){
     if(inputBox.value ===''){
-        alert("Oops To Do List is empty!!");
+        alert("Enter the reminder first!!");
     }
     else{
         let li=document.createElement("li");
@@ -19,6 +20,7 @@ function addTask(){
     SaveData();
 }
 
+
 listContainer.addEventListener("click",function(e){
     if(e.target.tagName === "LI"){
         e.target.classList.toggle("checked");
@@ -30,6 +32,15 @@ listContainer.addEventListener("click",function(e){
     }
 },false);
 
+
+
+function deleteelem() {
+    if(document.getElementById('list-container').innerHTML == '') window.alert("List is already empty!!");
+ else document.getElementById('list-container').innerHTML = '';
+ SaveData();
+}
+
+
 function SaveData(){
     localStorage.setItem("data", listContainer.innerHTML);
 }
@@ -39,4 +50,3 @@ function showTask(){
 }
 
 showTask();
-reload();
