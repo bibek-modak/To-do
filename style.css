@@ -217,11 +217,11 @@ ul li span:hover{
         height: 18px;
     }
     
-    .row{
+     .row{
         display: flex;
         align-items: center;
         justify-content:space-between;
-        background: #edeef0;
+        background: #ffffff;
         border-radius: 30px;
         padding-left: 20px;
         margin-bottom: 15px;
