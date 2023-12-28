@@ -39,3 +39,4 @@ function showTask(){
 }
 
 showTask();
+reload();
