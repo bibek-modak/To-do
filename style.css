@@ -6,8 +6,8 @@
 }
 
 .container{
-    width: 100%;
-    background-image:linear-gradient(135deg, #7368eb, #15a74d);
+    width: 100vw;
+    background-image:linear-gradient(140deg, #f66848, #09632c,purple);
     padding: 10px;
     min-height: 100vh;
     
@@ -19,10 +19,10 @@
     width: 100%;
     max-width: 540px;
     background: #ffffff;
-    margin: 120px auto 20px;
+    margin: 80px auto 20px;
     padding: 40px 30px 70px;
     border-radius: 10px;
-    height: 400px;
+    height: 500px;
 } 
 
 .todo-app h2{
@@ -44,7 +44,7 @@
     display: flex;
     align-items: center;
     justify-content:space-between;
-    background: #edeef0;
+    background: #ffffff;
     border-radius: 30px;
     padding-left: 20px;
     margin-bottom: 25px;
@@ -66,7 +66,7 @@ input{
 button{
     border: none;
     outline:none;
-    padding:12px 40px;
+    padding:12px 30px;
     background: linear-gradient(red,rgb(3, 30, 3));
     color: #ffffff;
     font-size: 16px;
@@ -78,7 +78,7 @@ ul li{
     list-style: none;
     font-size: 17px;
     padding: 12px 8px 12px 50px;
-    user-select: none;
+    user-select: auto;
     cursor: pointer;
     position: relative;
 }
@@ -96,6 +96,20 @@ ul li::before{
 
 }
 
+#can{
+    border: none;
+    outline:none;
+    margin-left: 5px;
+    padding:12px 12px;
+    background: linear-gradient(rgb(37, 124, 24),rgb(3, 30, 3));
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 40px;
+
+
+}
+
 ul li.checked{
     color: #555;
     text-decoration: line-through;
@@ -103,6 +117,7 @@ ul li.checked{
 
 ul li.checked::before{
     background-image: url(images/checked.png);
+
 }
 
 ul li span{
@@ -111,7 +126,7 @@ ul li span{
     top:5px;
     width: 40px;
     height: 40px;
-    font-size: 22px;
+    font-size: 30px;
     color: #c92121;
     line-height: 40px;
     text-align: center;
@@ -124,7 +139,7 @@ ul li span:hover{
     background: #edeef0;
     
 }
-
+/********************  css  for mobile devices  ***************************************/
 
 @media screen and (max-width:500px){
 
@@ -181,7 +196,7 @@ ul li span:hover{
     }
     .container{
         width: 100%;
-        background-image:linear-gradient(135deg, #7368eb, #15a74d);
+        background-image:linear-gradient(140deg, #f66848, #15a74d,purple);
         padding: 10px;
         min-height: 100vh;
         
@@ -218,7 +233,7 @@ ul li span:hover{
     .row{
         display: flex;
         align-items: center;
-        justify-content:space-between;
+        justify-content:center;
         background: #ffffff;
         border-radius: 30px;
         padding-left: 20px;
@@ -228,7 +243,7 @@ ul li span:hover{
     
 ul li{
     list-style: none;
-    font-size: 12px;
+    font-size: 14px;
     padding: 8px 8px 10px px;
     user-select: none;
     cursor:pointer;
@@ -253,10 +268,23 @@ ul li span{
     color: #c92121;
     line-height: 40px;
     text-align: center;
-    border-radius: 50%;
-    top:-1px
+    /* border-radius: 50%; */
+    /* top:-1px */
 }
     
+#can{
+    border: none;
+    outline:none;
+    margin-left: 5px;
+    padding:6px 10px;
+    background: linear-gradient(rgb(37, 124, 24),rgb(3, 30, 3));
+    color: #ffffff;
+    font-size: 8px;
+    cursor: pointer;
+    border-radius: 40px;
+
+
+}
 
 ul li span:hover{
 
