@@ -36,7 +36,7 @@ listContainer.addEventListener("click",function(e){
 
 function deleteelem() {
     if(document.getElementById('list-container').innerHTML == '') window.alert("List is already empty!!");
- else document.getElementById('list-container').innerHTML = '';
+ else document.getElementById('list-container').innerHTML .remove();
  SaveData();
 }
 
