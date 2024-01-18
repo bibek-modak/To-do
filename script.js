@@ -37,12 +37,16 @@ listContainer.addEventListener("click",function(e){
 function deleteelem() {
     if(document.getElementById('list-container').innerHTML == '') window.alert("List is already empty!!");
  else document.getElementById('list-container').innerHTML ="";
- SaveData();
+ clearData();
 }
 
 
 function SaveData(){
     localStorage.setItem("data", listContainer.innerHTML);
+}
+
+function clearData(){
+    localStorage.clear();
 }
 
 function showTask(){
